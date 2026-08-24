@@ -3,7 +3,7 @@ import Button from "../components/Button";
 
 export default function HomePage() {
   return (
-    <div className="bg-black h-screen overflow-hidden flex items-center justify-center">
+    <div className="bg-foreground h-screen overflow-hidden flex items-center justify-center">
       {/* Conteneur central rose */}
       <div className="bg-pink-500 w-[90vw] max-w-7xl h-[90vh] rounded-[40px] p-10 md:p-12 flex flex-col shadow-2xl">
         {/* Header */}
@@ -14,7 +14,7 @@ export default function HomePage() {
           {/* ===== COLONNE GAUCHE ===== */}
           <div className="flex flex-col gap-6 min-h-0">
             {/* Bloc Hero (le plus grand) */}
-            <div className="flex-1 bg-white/5 rounded-2xl p-8 flex flex-col justify-between min-h-0 overflow-hidden">
+            <div className="flex-1 bg-background/5 rounded-2xl p-8 flex flex-col justify-between min-h-0 overflow-hidden">
               <div>
                 <h1 className="text-black text-3xl md:text-4xl lg:text-5xl font-bold leading-tight tracking-tight">
                   Animate Your Ideas Into Reality with Animaflix
@@ -28,7 +28,7 @@ export default function HomePage() {
               </div>
 
               {/* Placeholder illustration (main qui dessine) */}
-              <div className="mt-6 h-36 md:h-44 bg-black/10 rounded-xl flex items-center justify-center border border-black/10">
+              <div className="mt-6 h-36 md:h-44 bg-foreground/10 rounded-xl flex items-center justify-center border border-black/10">
                 <svg
                   className="w-24 h-24 text-black/40"
                   fill="none"
@@ -46,14 +46,14 @@ export default function HomePage() {
             </div>
 
             {/* Bloc CTA secondaire */}
-            <div className="bg-white/10 rounded-2xl p-6 flex items-center justify-between gap-4 shrink-0">
+            <div className="bg-background/10 rounded-2xl p-6 flex items-center justify-between gap-4 shrink-0">
               <div>
                 <p className="text-black font-bold text-lg">Start for Free</p>
                 <p className="text-black/70 text-sm mt-0.5">
                   No credit card required
                 </p>
               </div>
-              <Button className="bg-black text-pink-500 hover:bg-black/90 px-6 py-2.5 rounded-full font-semibold transition-colors whitespace-nowrap">
+              <Button className="bg-foreground text-pink-500 hover:bg-foreground/90 px-6 py-2.5 rounded-full font-semibold transition-colors whitespace-nowrap">
                 Get Started
               </Button>
             </div>
@@ -62,7 +62,7 @@ export default function HomePage() {
           {/* ===== COLONNE DROITE ===== */}
           <div className="flex flex-col gap-6 min-h-0">
             {/* Bloc "What is Animaflix?" */}
-            <div className="bg-white/10 rounded-2xl p-6 shrink-0">
+            <div className="bg-background/10 rounded-2xl p-6 shrink-0">
               <h2 className="text-black text-xl md:text-2xl font-bold">
                 What is Animaflix?
               </h2>
@@ -75,9 +75,9 @@ export default function HomePage() {
             </div>
 
             {/* Bloc Image / Features */}
-            <div className="flex-1 bg-white/5 rounded-2xl p-6 flex flex-col items-center justify-center min-h-0">
+            <div className="flex-1 bg-background/5 rounded-2xl p-6 flex flex-col items-center justify-center min-h-0">
               {/* Placeholder illustration (appareil photo + upload + partage) */}
-              <div className="w-full h-full min-h-40 bg-black/10 rounded-xl flex items-center justify-center border border-black/10">
+              <div className="w-full h-full min-h-40 bg-foreground/10 rounded-xl flex items-center justify-center border border-black/10">
                 <div className="flex items-center gap-6 text-black/40">
                   {/* Camera */}
                   <svg
