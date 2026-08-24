@@ -1,4 +1,32 @@
+@import "tailwindcss";
+
 :root {
+  /* Colors */
+  --primary: #fa005a;
+  --background: #ffffff;
+  --foreground: #000000;
+
+  /* Typographie */
+  --sans: "Sniglet", "Geist", "Host Grotesk", sans-serif;
+  --serif: "Hedvig Letters Serif", serif;
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: var(--sans);
+    background-color: var(--background);
+    color: var(--foreground);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  li {
+    list-style: none;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
