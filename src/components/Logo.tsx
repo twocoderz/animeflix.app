@@ -11,7 +11,7 @@ export default function Logo(props: LogoProps) {
   return (
     <Link to="/" aria-label="Go to home page">
       <img
-        src="/logos/animeflix-32.svg"
+        src="/logos/animeflix-64.svg"
         srcSet="/logos/animeflix-32.svg 32w, /logos/animeflix-64.svg 64w,"
         sizes={`${size}px`}
         width={size}

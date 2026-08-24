@@ -20,7 +20,7 @@ export default function Button({
 
   const variants = {
     primary:
-      "bg-primary text-background border-2 border-background active:scale-[0.98] focus:ring-primary",
+      "bg-primary text-background border-2 border-foreground active:scale-[0.98] focus:ring-primary",
     secondary:
       "bg-foreground text-background border-2 border-foreground focus:ring-foreground",
   };
