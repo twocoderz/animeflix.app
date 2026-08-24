@@ -4,13 +4,13 @@ export default function HomePage() {
   return (
     <div className="bg-foreground h-screen overflow-hidden flex items-center justify-center">
       {/* Conteneur central rose */}
-      <div className="bg-primary max-w-7xl rounded-sm p-10 md:p-12 flex flex-col">
+      <div className="bg-primary h-[90vh] max-w-7xl rounded-sm p-10 md:p-12 flex flex-col">
         {/* Header */}
         <Header />
 
         {/* Contenu principal */}
-        <div className="flex-1 grid grid-cols-1 lg:grid-cols-[1.85fr_1fr] gap-6 min-h-0">
-          <div className="flex flex-col gap-6 min-h-0"></div>
+        <div className="">
+          <div className=""></div>
         </div>
 
         {/* Footer – logos TV */}
