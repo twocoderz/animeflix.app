@@ -38,10 +38,60 @@ export default function HomePage() {
 
           <div className="absolute bottom-8 right-8 hidden h-32 w-20 rotate-6 items-center justify-center border-2 border-foreground bg-primary p-3 shadow-[6px_6px_0_#000] lg:flex">
             <img
-              src="/logos/animeflix-64.svg"
-              alt=""
-              className="h-full w-full object-contain"
-            />
+            src="/tv_logos/01_Daria.png"
+            alt="Daria"
+            className="h-8 md:h-10 object-contain opacity-90 hover:opacity-100 transition-opacity"
+          />
+          <img
+            src="/tv_logos/02_Duck%20TV.png"
+            alt="Duck TV"
+            className="h-8 md:h-10 object-contain opacity-90 hover:opacity-100 transition-opacity"
+          />
+          <img
+            src="/tv_logos/03_FilmRise%20Anime.png"
+            alt="FilmRise Anime"
+            className="h-8 md:h-10 object-contain opacity-90 hover:opacity-100 transition-opacity"
+          />
+          <img
+            src="/tv_logos/04_Gong.png"
+            alt="Gong"
+            className="h-8 md:h-10 object-contain opacity-90 hover:opacity-100 transition-opacity"
+          />
+          <img
+            src="/tv_logos/05_Mr%20Bean%20Anim%C3%A9.png"
+            alt="Mr Bean Animé"
+            className="h-8 md:h-10 object-contain opacity-90 hover:opacity-100 transition-opacity"
+          />
+          <img
+            src="/tv_logos/06_Naruto.png"
+            alt="Naruto"
+            className="h-8 md:h-10 object-contain opacity-90 hover:opacity-100 transition-opacity"
+          />
+          <img
+            src="/tv_logos/07_Pluto%20TV%20Retro%20Toons.png"
+            alt="Pluto TV Retro Toons"
+            className="h-8 md:h-10 object-contain opacity-90 hover:opacity-100 transition-opacity"
+          />
+          <img
+            src="/tv_logos/08_Pluto%20TV%20Toons.png"
+            alt="Pluto TV Toons"
+            className="h-8 md:h-10 object-contain opacity-90 hover:opacity-100 transition-opacity"
+          />
+          <img
+            src="/tv_logos/09_RetroCrush.png"
+            alt="RetroCrush"
+            className="h-8 md:h-10 object-contain opacity-90 hover:opacity-100 transition-opacity"
+          />
+          <img
+            src="/tv_logos/10_Tiny%20Pop.png"
+            alt="Tiny Pop"
+            className="h-8 md:h-10 object-contain opacity-90 hover:opacity-100 transition-opacity"
+          />
+          <img
+            src="/tv_logos/11_Yu-Gi-Oh.png"
+            alt="Yu-Gi-Oh"
+            className="h-8 md:h-10 object-contain opacity-90 hover:opacity-100 transition-opacity"
+          />
           </div>
         </section>
       </div>
