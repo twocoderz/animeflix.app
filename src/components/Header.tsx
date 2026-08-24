@@ -2,7 +2,7 @@ import Logo from "./Logo";
 
 export default function Header() {
   return (
-    <header className="flex justify-between bg-background items-center mb-8 shrink-0">
+    <header className="flex justify-between px-12 rounded-xl bg-background items-center mb-8 shrink-0">
       <Logo />
       <img
         src="/icons/androidIcon.svg"
