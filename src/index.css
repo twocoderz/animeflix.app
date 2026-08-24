@@ -18,7 +18,7 @@
 
   body {
     font-family: var(--sans);
-    background-color: var(--background);
+    background-color: var(--foreground);
     color: var(--foreground);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -27,6 +27,12 @@
   li {
     list-style: none;
   }
+}
+
+@theme {
+  --color-primary: var(--primary);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
 }
 
 @media (prefers-color-scheme: dark) {
