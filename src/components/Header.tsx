@@ -2,12 +2,12 @@ import Logo from "./Logo";
 
 export default function Header() {
   return (
-    <header className="flex justify-between px-12 rounded-xl bg-background items-center mb-8 shrink-0">
-      <Logo />
+    <header className="flex bg-background shrink-0 items-center justify-between mx-12 mt-12 rounded-4xl border-2 border-foreground px-6 py-2 sm:px-10 sm:py-7 lg:px-8">
+      <Logo size={64} />
       <img
         src="/icons/androidIcon.svg"
-        alt="android icon"
-        className="w-12 h-12"
+        alt="Android"
+        className="h-8 w-8 sm:h-10 sm:w-10"
       />
     </header>
   );

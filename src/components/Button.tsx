@@ -16,11 +16,11 @@ export default function Button({
   disabled = false,
 }: ButtonProps) {
   const base =
-    "inline-flex items-center justify-center cursor-pointer font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed";
+    "inline-flex items-center justify-center cursor-pointer font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50";
 
   const variants = {
     primary:
-      "bg-primary text-foreground border-2 border-foreground active:scale-[0.98] focus:ring-primary",
+      "bg-primary text-background border-2 border-background active:scale-[0.98] focus:ring-primary",
     secondary:
       "bg-foreground text-background border-2 border-foreground focus:ring-foreground",
   };
