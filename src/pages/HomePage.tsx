@@ -4,7 +4,7 @@ export default function HomePage() {
   return (
     <div className="bg-foreground h-screen overflow-hidden flex items-center justify-center">
       {/* Conteneur central rose */}
-      <div className="bg-primary w-[90vw] max-w-7xl h-[90vh] rounded-[40px] p-10 md:p-12 flex flex-col shadow-2xl">
+      <div className="bg-primary max-w-7xl rounded-sm p-10 md:p-12 flex flex-col">
         {/* Header */}
         <Header />
 
