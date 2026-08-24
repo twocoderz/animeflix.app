@@ -1,13 +1,14 @@
 import Logo from "./Logo";
-import Button from "./Button";
 
 export default function Header() {
   return (
-    <header className="flex justify-between items-center mb-8 shrink-0">
+    <header className="flex justify-between bg-background items-center mb-8 shrink-0">
       <Logo />
-      <Button className="bg-foreground text-pink-500 hover:bg-foreground/90 px-6 py-2.5 rounded-full font-semibold transition-colors">
-        Get Started
-      </Button>
+      <img
+        src="/icons/androidIcon.svg"
+        alt="android icon"
+        className="w-12 h-12"
+      />
     </header>
   );
 }
