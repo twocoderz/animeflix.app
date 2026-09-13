@@ -70,7 +70,7 @@ export default function Header() {
               href="#telecharger"
               className="rounded-full bg-(--text) px-4 py-2 text-sm font-medium text-(--bg)"
             >
-              Télécharger
+              Télécharger l'apk
             </a>
           </div>
         </div>
