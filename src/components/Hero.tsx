@@ -1,0 +1,47 @@
+import { Star } from "lucide-react";
+import PhoneMockup from "./PhoneMockup";
+import AppStoreButtons from "./AppStoreButtons";
+
+export default function Hero() {
+  return (
+    <section
+      id="accueil"
+      className="mx-auto flex max-w-6xl flex-col-reverse items-center gap-16 px-6 pb-24 pt-40 lg:flex-row lg:pt-48"
+    >
+      <div className="w-full lg:w-1/2">
+        <PhoneMockup />
+      </div>
+
+      <div className="w-full lg:w-1/2">
+        <p className="font-mono text-xs uppercase tracking-widest text-(--text-muted)">
+          // Regardez vos chaînes en direct
+        </p>
+
+        <h1 className="mt-4 font-display text-4xl font-bold leading-[1.1] tracking-tight text-(--text) sm:text-5xl">
+          Vos chaînes préférées, partout avec vous.
+        </h1>
+
+        <p className="mt-5 max-w-md text-base leading-relaxed text-(--text-muted)">
+          Accédez au direct et au replay des meilleures chaînes TV en haute
+          définition, sur mobile comme sur le web.
+        </p>
+
+        <div className="mt-6 flex items-center gap-2">
+          <div className="flex text-(--color-accent">
+            {Array.from({ length: 5 }).map((_, i) => (
+              <Star key={i} size={16} fill="currentColor" strokeWidth={0} />
+            ))}
+          </div>
+          <span className="text-sm font-medium text-(--text)">4.9</span>
+          <span className="text-sm text-(--text-muted)">
+            sur App Store & Google Play
+          </span>
+        </div>
+
+        <div className="mt-8">
+          <AppStoreButtons />
+        </div>
+      </div>
+    </section>
+  );
+}
