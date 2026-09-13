@@ -13,9 +13,8 @@ export default function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 border-b border-(--border) bg-(--bg)/80 backdrop-blur-md">
-      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
-        {/* Remplace ce texte par ton logo : <img src="/logo.svg" alt="Nom de l'app" className="h-7 w-auto" /> */}
+    <header className="fixed inset-x-0 top-0 z-50 bg-(--bg)/80 backdrop-blur-md">
+      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between py-8 px-6">
         <Logo size={128} />
 
         <nav className="hidden items-center gap-8 md:flex">
@@ -23,7 +22,7 @@ export default function Header() {
             <a
               key={link.href}
               href={link.href}
-              className="text-sm text-(--text-muted) transition-colors hover:text-(--text)"
+              className="text-lg text-(--text-muted) transition-colors hover:text-(--text)"
             >
               {link.label}
             </a>
