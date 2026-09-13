@@ -1,11 +1,12 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { NavLink } from "react-router-dom";
 import ThemeToggle from "./ThemeToggle";
 import Logo from "./Logo";
 
 const NAV_LINKS = [
-  { label: "Accueil", href: "#accueil" },
-  { label: "Chaînes", href: "#chaines" },
+  { label: "Accueil", href: "/" },
+  { label: "Chaînes", href: "/chaines" },
 ];
 
 export default function Header() {
@@ -19,13 +20,18 @@ export default function Header() {
         <div className="flex items-center gap-12">
           <nav className="hidden items-center gap-8 md:flex">
             {NAV_LINKS.map((link) => (
-              <a
+              <NavLink
                 key={link.href}
-                href={link.href}
-                className="text-lg text-(--text-muted) transition-colors hover:text-(--text)"
+                to={link.href}
+                end={link.href === "/"}
+                className={({ isActive }) =>
+                  `text-lg transition-colors hover:text-(--text) ${
+                    isActive ? "text-(--text)" : "text-(--text-muted)"
+                  }`
+                }
               >
                 {link.label}
-              </a>
+              </NavLink>
             ))}
           </nav>
 
@@ -53,14 +59,19 @@ export default function Header() {
         <div className="border-t border-(--border) px-6 py-4 md:hidden">
           <nav className="flex flex-col gap-4">
             {NAV_LINKS.map((link) => (
-              <a
+              <NavLink
                 key={link.href}
-                href={link.href}
-                className="text-sm text-(--text-muted)"
+                to={link.href}
+                end={link.href === "/"}
+                className={({ isActive }) =>
+                  `text-sm transition-colors hover:text-(--text) ${
+                    isActive ? "text-(--text)" : "text-(--text-muted)"
+                  }`
+                }
                 onClick={() => setOpen(false)}
               >
                 {link.label}
-              </a>
+              </NavLink>
             ))}
           </nav>
           <div className="mt-4 flex items-center justify-between">
