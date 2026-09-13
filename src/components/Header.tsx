@@ -34,7 +34,7 @@ export default function Header() {
             <ThemeToggle />
             <a
               href="#telecharger"
-              className="rounded-full bg-(--text) px-6 py-4 text-sm font-medium text-(--bg) transition-opacity hover:opacity-90"
+              className="rounded-full bg-(--text) px-6 py-4 text-lg font-medium text-(--bg) transition-opacity hover:opacity-90"
             >
               Télécharger l'apk
             </a>

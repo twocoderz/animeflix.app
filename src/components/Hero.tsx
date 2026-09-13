@@ -1,5 +1,4 @@
 import { Star } from "lucide-react";
-import AppStoreButtons from "./AppStoreButtons";
 import VideoContainer from "./VideoContainer";
 
 export default function Hero() {
@@ -27,19 +26,24 @@ export default function Hero() {
         </p>
 
         <div className="mt-8 flex items-center gap-2">
-          <div className="flex text-(--color-accent">
+          <div className="flex text-(--color-accent)">
             {Array.from({ length: 5 }).map((_, i) => (
               <Star key={i} size={16} fill="currentColor" strokeWidth={0} />
             ))}
           </div>
           <span className="text-sm font-medium text-(--text)">4.9</span>
           <span className="text-sm text-(--text-muted)">
-            sur App Store & Google Play
+            uniquement sur Android.
           </span>
         </div>
 
         <div className="mt-8">
-          <AppStoreButtons />
+          <a
+            href="#telecharger"
+            className="inline-flex rounded-full bg-(--text) px-6 py-4 text-xl font-medium text-(--bg) transition-opacity hover:opacity-90"
+          >
+            Télécharger l'apk
+          </a>
         </div>
       </div>
     </section>
