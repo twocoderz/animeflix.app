@@ -1,6 +1,6 @@
 import { Star } from "lucide-react";
-import PhoneMockup from "./PhoneMockup";
 import AppStoreButtons from "./AppStoreButtons";
+import VideoContainer from "./VideoContainer";
 
 export default function Hero() {
   return (
@@ -9,7 +9,7 @@ export default function Hero() {
       className="mx-auto flex max-w-6xl flex-col-reverse items-center gap-16 px-6 pb-24 pt-40 lg:flex-row lg:pt-48"
     >
       <div className="w-full lg:w-1/2">
-        <PhoneMockup />
+        <VideoContainer src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" />
       </div>
 
       <div className="w-full lg:w-1/2">
