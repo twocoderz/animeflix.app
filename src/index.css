@@ -1,11 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap");
 @import "tailwindcss";
 
 /* Tailwind v4 : le variant dark: est opt-in, il faut le déclarer explicitement */
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  --font-display: "Space Grotesk", sans-serif;
+  --font-display: Sniglet, sans-serif;
   --font-sans: "Inter", sans-serif;
   --font-mono: "JetBrains Mono", monospace;
 }

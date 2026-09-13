@@ -52,13 +52,6 @@ export default function AppStoreButtons({
           <span className="text-sm font-semibold">Google Play</span>
         </span>
       </a>
-
-      <a
-        href="#web"
-        className="rounded-xl border border-(--border) px-4 py-2.5 text-sm font-medium text-(--text) transition-colors hover:bg-[var(--surface)]"
-      >
-        Regarder sur le Web
-      </a>
     </div>
   );
 }

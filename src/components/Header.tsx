@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import ThemeToggle from "./ThemeToggle";
+import Logo from "./Logo";
 
 const NAV_LINKS = [
   { label: "Accueil", href: "#accueil" },
@@ -15,12 +16,7 @@ export default function Header() {
     <header className="fixed inset-x-0 top-0 z-50 border-b border-(--border) bg-(--bg)/80 backdrop-blur-md">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
         {/* Remplace ce texte par ton logo : <img src="/logo.svg" alt="Nom de l'app" className="h-7 w-auto" /> */}
-        <a
-          href="#accueil"
-          className="font-display text-lg font-bold tracking-tight text-(--text)"
-        >
-          Streamly<span className="text-(--color-accent">.</span>
-        </a>
+        <Logo size={128} />
 
         <nav className="hidden items-center gap-8 md:flex">
           {NAV_LINKS.map((link) => (
