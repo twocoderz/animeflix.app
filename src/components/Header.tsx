@@ -6,7 +6,6 @@ import Logo from "./Logo";
 const NAV_LINKS = [
   { label: "Accueil", href: "#accueil" },
   { label: "Chaînes", href: "#chaines" },
-  { label: "Tarifs", href: "#tarifs" },
 ];
 
 export default function Header() {
