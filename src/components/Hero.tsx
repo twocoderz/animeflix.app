@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <section
       id="accueil"
-      className="mx-auto flex max-w-6xl flex-col-reverse items-center gap-16 px-6 pb-24 pt-40 lg:flex-row lg:pt-48"
+      className="mx-auto flex max-w-8xl flex-col-reverse items-center gap-16 px-6 pb-24 pt-40 lg:flex-row lg:pt-48"
     >
       <div className="w-full lg:w-1/2">
         <VideoContainer src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" />
@@ -17,16 +17,16 @@ export default function Hero() {
           // Regardez vos chaînes en direct
         </p>
 
-        <h1 className="mt-4 font-display text-4xl font-bold leading-[1.1] tracking-tight text-(--text) sm:text-5xl">
+        <h1 className="mt-4 font-display text-4xl lg:text-7xl font-medium leading-[1.1] tracking-tight text-(--text) max-w-3xl">
           Vos chaînes préférées, partout avec vous.
         </h1>
 
-        <p className="mt-5 max-w-md text-base leading-relaxed text-(--text-muted)">
+        <p className="mt-8 max-w-md text-xl leading-relaxed text-(--text-muted)">
           Accédez au direct et au replay des meilleures chaînes TV en haute
           définition, sur mobile comme sur le web.
         </p>
 
-        <div className="mt-6 flex items-center gap-2">
+        <div className="mt-8 flex items-center gap-2">
           <div className="flex text-(--color-accent">
             {Array.from({ length: 5 }).map((_, i) => (
               <Star key={i} size={16} fill="currentColor" strokeWidth={0} />
