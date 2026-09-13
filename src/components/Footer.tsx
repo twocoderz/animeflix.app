@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="px-6 py-10 text-center">
+    <footer className="px-6 py-12 text-center">
       <p className="text-sm text-(--text-muted)">
         © {new Date().getFullYear()} Animeflix. Tous droits réservés.
       </p>
