@@ -10,6 +10,7 @@
 }
 
 :root {
+  --primary: #fa005a;
   --bg: #fafafa;
   --surface: #ffffff;
   --text: #18181b;

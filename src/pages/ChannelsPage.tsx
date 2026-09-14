@@ -14,9 +14,10 @@ export default function ChannelsPage() {
           <h1 className="mt-4 font-display text-4xl font-medium leading-tight tracking-tight text-(--text) sm:text-6xl">
             Toutes les chaînes
           </h1>
-          <p className="mt-6 text-lg leading-relaxed text-(--text-muted)">
-            Retrouvez vos chaînes préférées et explorez une sélection pensée
-            pour les amateurs d&apos;animation et de télévision en direct.
+          <p className="mt-6 text-xl leading-relaxed text-(--text-muted)">
+            Toute l'animation en streaming non-stop. ADN TV+, Yu-Gi-Oh!,
+            RetroCrush et les classiques animés en HD, 24h/24 et sans
+            inscription.
           </p>
         </header>
 
